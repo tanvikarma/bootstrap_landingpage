@@ -1,5 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.section_two {
+    background-color: rgb(235 233 233);
+}
+
+.combine_data {
+    padding: 50px 110px;
+}
+
+.section_two .right-data .lower-profile {
+    width: 90%;
+    background-color: #fff;
+    margin-top: 35px;
+}
+
+.heading {
+    color: #2d2d58;
+}
+
+.lower-char {
+    font-size: 13px;
 }
