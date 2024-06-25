@@ -137,3 +137,30 @@ hr {
 .footer_ul{
     list-style: none;
 }
+
+/* section contact */
+
+.section-contact {
+    /* height: 500px; */
+    padding: 40px 0;
+}
+
+form input[type] {
+    font-size: 10px;
+    padding: 4px;
+}
+
+
+.form-alignment {
+    text-align: justify;
+
+}
+
+textarea::placeholder {
+    font-size: 10px;
+    padding: 4px;
+}
+
+.accordion button {
+    height: 25px;
+}
