@@ -12,11 +12,11 @@
 .main::after{
     content: "";
     width: 739px;
-    height: 672px;
+    height: 538px;
     background: url(../images/bg.jpg);
     background-color: red;
     top: 0px;
-    right: 0px;
+    right: 1px;
     position: absolute;
     display: inline-block;
     z-index: -1;
@@ -32,7 +32,7 @@
     background-color:rgba(113, 221, 167, 0.2);
 }
 .banner{
-    height: 62vh;
+    height: 50vh;
 }
 .banner_title{
     font-size: 40px;
@@ -47,4 +47,11 @@
 }
 .btn_margin{
     margin-left: 100px !important;
+}
+.card_context:hover{
+    background-color: #0a58ca;
+    color: white;
+}
+.card_text{
+    font-size: 15px;
 }
