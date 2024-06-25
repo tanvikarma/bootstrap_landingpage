@@ -35,7 +35,6 @@
     background: url('../images/back_img.jpg') no-repeat center center/cover;
     height: 400px;
     z-index: 0;
-    width: 100vw;
 }
 
 .section-three::after {
@@ -44,7 +43,7 @@
     position: absolute;
     top: 0;
     height: 400px;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
     background-color: rgb(80, 80, 230);
 }
@@ -63,4 +62,31 @@ hr {
 .imgsec-rightdata {
     text-align: justify;
     padding-left: 5px;
+}
+
+/* section contact */
+
+.section-contact {
+    /* height: 500px; */
+    padding: 40px 0;
+}
+
+form input[type] {
+    font-size: 10px;
+    padding: 4px;
+}
+
+
+.form-alignment {
+    text-align: justify;
+
+}
+
+textarea::placeholder {
+    font-size: 10px;
+    padding: 4px;
+}
+
+.accordion button {
+    height: 25px;
 }
