@@ -77,9 +77,6 @@
 .lower-char {
     font-size: 13px;
 }
-
-
-
 .section-three {
     content: "";
     position: relative;
@@ -115,4 +112,28 @@ hr {
 .imgsec-rightdata {
     text-align: justify;
     padding-left: 5px;
+}
+.client_heading{
+    height: 200px;
+    background-color: #052555;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.rule{
+    width:50px;
+    height: 1px;
+    border-bottom: 3px solid white ;
+    align-items: center;
+ }
+ .client_card{
+    position: relative;
+    bottom: 40px;
+ }
+ .footer_section{
+    background-color: #052555;
+    /* height: 270px; */
+}
+.footer_ul{
+    list-style: none;
 }
