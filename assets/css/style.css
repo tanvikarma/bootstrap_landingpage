@@ -2,6 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    color: #0a58ca;
+    font-size: xx-large;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main::after{
+    content: "";
+    width: 739px;
+    height: 538px;
+    background: url(../images/bg.jpg);
+    background-color: red;
+    top: 0px;
+    right: 1px;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+}
+.main::before{
+    content: '';
+    width: 170px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 320px;
+    left: -80px;
+    background-color:rgba(113, 221, 167, 0.2);
+}
+.banner{
+    height: 50vh;
+}
+.banner_title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: #0a58ca;;
+}
+.first_section p{
+    margin-left: 100px;
+    color: #0a58ca;;
+}
+.btn_margin{
+    margin-left: 100px !important;
+}
+.card_context:hover{
+    background-color: #0a58ca;
+    color: white;
+}
+.card_text{
+    font-size: 15px;
 }
 
 .section_two {
@@ -35,6 +87,7 @@
     background: url('../images/back_img.jpg') no-repeat center center/cover;
     height: 400px;
     z-index: 0;
+    /* width: 100vw; */
 }
 
 .section-three::after {
