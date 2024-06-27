@@ -4,70 +4,30 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.logo{
-    color: #0a58ca;
-    font-size: xx-large;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.main::after{
-    content: "";
-    width: 739px;
-    height: 538px;
-    background: url(../images/bg.jpg);
-    background-color: red;
-    top: 0px;
-    right: 1px;
-    position: absolute;
-    display: inline-block;
-    z-index: -1;
-}
-.main::before{
-    content: '';
-    width: 170px;
-    height: 250px;
-    border-radius: 50%;
-    position: absolute;
-    top: 320px;
-    left: -80px;
-    background-color:rgba(113, 221, 167, 0.2);
-}
-.banner{
-    height: 50vh;
-}
-.banner_title{
-    font-size: 40px;
-    font-weight: 600;
-    margin-top: 100px;
-    margin-left: 100px;
-    color: #0a58ca;;
-}
-.first_section p{
-    margin-left: 100px;
-    color: #0a58ca;;
-}
-.btn_margin{
-    margin-left: 100px !important;
-}
-.card_context:hover{
-    background-color: #0a58ca;
-    color: white;
-}
-.card_text{
-    font-size: 15px;
-}
 
-.section_two {
+/* quality section */
+
+.quality-section {
     background-color: rgb(235 233 233);
 }
 
 .combine_data {
-    padding: 50px 40px;
+    padding: 50px 0px;
 }
 
-.section_two .right-data .profile-data {
+.quality-icon i {
+    color: skyblue;
+}
+
+.profile-name {
+    color: blue;
+    font-size: smaller;
+}
+
+.quality-section .content-side .profile-data {
     width: 90%;
     background-color: #fff;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 .heading {
@@ -75,53 +35,54 @@
 }
 
 .lower-char {
-    font-size: 13px;
+    font-size: 11px;
 }
 
+/* Features section */
 
-
-.section-three {
+.features-section {
     content: "";
     position: relative;
     top: 0;
     background: url('../images/back_img.jpg') no-repeat center center/cover;
-    height: 400px;
     z-index: 0;
-    /* width: 100vw; */
 }
 
-.section-three::after {
+.features-section::after {
     content: "";
     opacity: 0.8;
     position: absolute;
     top: 0;
-    height: 400px;
+    height: 100%;
     width: 100%;
     z-index: -1;
     background-color: rgb(80, 80, 230);
 }
 
-.section-three .third-main {
+.features-section .features-main {
     color: #fff;
     text-align: center;
     padding: 90px 0;
     z-index: 1;
 }
 
-hr {
-    width: 5%;
+.features-icon img-div {
+    color: #fff;
 }
 
-.imgsec-rightdata {
+.features-data {
     text-align: justify;
     padding-left: 5px;
 }
 
-/* section contact */
+/* contact section */
 
-.section-contact {
-    /* height: 500px; */
+.contact-section {
     padding: 40px 0;
+}
+
+.contact-heading {
+    text-align: center;
 }
 
 form input[type] {
@@ -129,10 +90,17 @@ form input[type] {
     padding: 4px;
 }
 
+form input {
+    width: 100%;
+}
 
 .form-alignment {
     text-align: justify;
+}
 
+form textarea {
+    font-size: 10px;
+    width: 100%;
 }
 
 textarea::placeholder {
@@ -140,6 +108,43 @@ textarea::placeholder {
     padding: 4px;
 }
 
+form button {
+    font-size: x-small !important;
+}
+
 .accordion button {
     height: 25px;
+}
+
+.accordion {
+    --bs-accordion-btn-icon-width: 0.9rem !important;
+}
+
+button span {
+    font-size: x-small;
+}
+
+/* news section */
+
+.news-section {
+    padding: 60px 0;
+    background-color: rgb(235, 233, 233);
+}
+
+.news-section span {
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.news-section .company {
+    font-size: 5px;
+    color: rgb(165, 163, 163);
+}
+
+.news-section .date {
+    background-color: blue;
+    color: #fff;
+    margin-top: 5px;
+    padding: 4px 8px;
+    text-align: center;
 }
