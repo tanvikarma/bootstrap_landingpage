@@ -9,40 +9,18 @@
     font-size: xx-large;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.card_wrepper{
-   /* margin-left: 12rem; */
-
-}
 .main::after{
     content: "";
     width: 739px;
     height: 538px;
     background: url(../images/bg.jpg);
+    background-color: red;
     top: 0px;
     right: 1px;
     position: absolute;
     display: inline-block;
     z-index: -1;
 }
-.nav_color{
-    color: white !important;
-}
-@media screen and (max-width: 767px) {
-    .main::after {
-        content: "";
-        width: 207px;
-        height: 150px;
-        background: url(../images/bg.jpg);
-        top: 0px;
-        right: 1px;
-        position: absolute;
-        display: inline-block;
-        z-index: -1;
-    }
-    .nav_color{
-       color: black !important;
-    }
-  }
 .main::before{
     content: '';
     width: 170px;
@@ -60,10 +38,15 @@
     font-size: 40px;
     font-weight: 600;
     margin-top: 100px;
+    margin-left: 100px;
     color: #0a58ca;;
 }
 .first_section p{
-     color: #0a58ca;;
+    margin-left: 100px;
+    color: #0a58ca;;
+}
+.btn_margin{
+    margin-left: 100px !important;
 }
 .card_context:hover{
     background-color: #0a58ca;
