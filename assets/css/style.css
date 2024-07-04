@@ -18,32 +18,20 @@
     top: 0px;
     right: 1px;
     position: absolute;
-    display: inline-block;
+    display: inline-block; 
     z-index: -1;
 }
-/*.banner::after{
-    content: "";
-    width: 600px;
-    height: 390px;
-    background: url(../images/vectorbg.png);
-    background-repeat: no-repeat;
-    top: 100px;
-    left: 440px;
-    position: absolute;
-    display: inline-block;
-/*    z-index: -1;*/
-
 .nav_color{
     color: white !important;
 }
 .main::before{
     content: '';
-    width: 170px;
-    height: 250px;
+    width: 150px;
+    height: 170px;
     border-radius: 50%;
     position: absolute;
-    top: 320px;
-    left: -80px;
+    top: 250px;
+    left: -90px;
     background-color:rgba(113, 221, 167, 0.2);
 }
 .banner{
@@ -96,10 +84,19 @@
 }
 
 .lower-char {
-    font-size: 11px;
+    color: gray;
+    
 }
 /* .section-three { */
 
+/* key feature */
+.max-width{
+    max-width: 158px;
+    color: rgb(226, 224, 224);
+    margin-top: 5px;
+    font-size: 8px;
+    justify-content: center;
+}
 /* Features section */
 
 .features-section {
@@ -138,7 +135,7 @@
     padding-left: 5px;
 }
 .client_heading{
-    height: 200px;
+    height: 170px;
     background-color: #052555;
     color: white;
     justify-content: center;
@@ -207,11 +204,15 @@ form button {
 
 
 .logo_img{
-    max-width: 40px;
-    width: 50px;
+    width: 80px !important;
 }
-
-
+.team_img{
+    max-width: 600px;
+    margin: auto;
+}
+.team_img1{
+    max-width: 200px !important;
+}
 @media screen and (max-width: 767px) {
     .main::after {
         content: "";
@@ -231,9 +232,40 @@ form button {
     text-align: center;
     }
     .team_img{
-        max-width: 200px;
+    max-width: 140px;
     margin: 0px auto;
     display: block;
+    }
+    .profile-img{
+        max-width: 30px !important;
+        position: relative;
+        top: 22px;
+        left: 10px;
+    }
+    .profile-text{
+        position: relative;
+        left: 30px;
+    }
+    .keyTextBox{
+        margin: auto;
+    }
+    .logo_img{
+        max-width: 40px !important;
+    }
+    .contact-section{
+        padding: 30px;
+    }
+    .news-section{
+       text-align: center;
+    }
+    .date span{
+        display: block;
+        margin: auto;
+    }
+    .social_icon{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 19px;
     }
   }
     
