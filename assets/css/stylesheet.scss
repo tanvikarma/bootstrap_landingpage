@@ -1,0 +1,238 @@
+@import url("variable.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    color:  var(--top_Heading_color);
+    font-size: xx-large;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    &:after {
+        content: "";
+        width: 600px;
+        height: 390px;
+        background: url(../images/bg.jpg);
+        top: 0px;
+        right: 1px;
+        position: absolute;
+        display: inline-block; 
+        z-index: -1;
+    }
+     &:before{
+        content: '';
+        width: 150px;
+        height: 170px;
+        border-radius: 50%;
+        position: absolute;
+        top: 250px;
+        left: -90px;
+        background-color:rgba(113, 221, 167, 0.2);
+    }
+    .set_position{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: var(--white)!important;
+    }
+}
+
+.nav_color{
+    color: var(--white)!important;
+}
+
+// text section of header
+.first_section{
+    p{
+        color:  var(--top_Heading_color);
+    }
+}
+
+//card section
+.card_context{
+    :hover{
+        background-color:  var(--top_Heading_color);
+        color: var(--white);
+    }
+}
+
+.card_text{
+    font-size: 10px !important;
+}
+
+.banner{
+    height: 40vh;
+}
+
+.banner_title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 100px;
+    color: var(--top_Heading_color);
+}
+
+/* quality section */
+.quality-section{
+    background-color:var(--white);
+    .content-side{
+        .profile-data {
+            width: 90%;
+            background-color:var(--white);
+            margin-top: 15px;
+        }
+    }
+    .combine_data{
+        padding: 50px 0px;
+    }
+    .quality-icon i{
+        color: skyblue;
+    }
+}
+
+/* key feature */
+.max-width{
+    max-width: 158px;
+    color: var(--white);
+    margin-top: 5px;
+    font-size: 8px;
+    justify-content: center;
+}
+
+/* Features section */
+.features-section{
+    content: "";
+    position: relative;
+    top: 0;
+    background: url('../images/back_img.jpg') no-repeat center center/cover;
+    z-index: 0;
+    &:after{
+        content: "";
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-color: rgb(80, 80, 230);
+    }
+    .features-main{
+        color: var(--white);
+        text-align: center;
+        padding: 90px 0;
+        z-index: 1;
+    }
+    .features-icon{
+        img-div {
+            color:var(--white);
+        }
+    }
+    .features-data{
+        text-align: justify;
+        padding-left: 5px;
+    }
+}
+
+// crearative team && client section
+.client_heading{
+    height: 170px;
+    background-color: var(--blue);
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+// footer section
+.footer_section{
+    background-color:var(--blue);
+    .footer_ul{
+        list-style: none;
+    }
+ }
+
+/* quick support section */
+.contact-section{
+    padding: 40px 0;
+    .contact-heading {
+        text-align: center;
+    }
+    form {
+        input[type]{
+            font-size: 10px;
+            padding: 4px;
+        }
+        input{
+            width: 100%;
+        }
+        textarea{
+            font-size: 10px;
+            width: 100%;
+            &:placeholder {
+                font-size: 10px;
+                padding: 4px;
+            }
+        }
+        button{
+            font-size: x-small !important;
+            span{
+                font-size: x-small;
+            }
+        } 
+    }
+    
+    .form-alignment{
+        text-align: justify;
+    }
+    
+    .accordion{
+        --bs-accordion-btn-icon-width: 0.9rem !important;
+        button{
+            height: 25px;
+        }
+    }
+}
+
+/* news section */
+.news-section{
+    padding: 60px 0;
+    background-color: var(--white);
+    span {
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    .company{
+        font-size: 5px;
+        color: rgb(165, 163, 163);
+    }
+    .date{
+        background-color: var(--orignalblue );
+        color:var(--white);
+        margin-top: 5px;
+        padding: 4px 8px;
+        text-align: center;
+    }
+}
+
+.profile-name{
+    color: var(--orignalblue);
+    font-size: smaller;
+}
+
+.heading{
+    color: #2d2d58;
+}
+
+.lower-char{
+    color: gray;
+}
+
+.rule{
+    width:50px;
+    height: 1px;
+    border-bottom: 3px solid var(--white) ;
+    align-items: center;
+ }

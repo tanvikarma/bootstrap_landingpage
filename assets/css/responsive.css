@@ -1,0 +1,50 @@
+@media screen and (max-width: 767px) {
+    .main::after {
+        content: "";
+        width: 207px;
+        height: 150px;
+        background: url(../images/bg.jpg);
+        top: 0px;
+        right: 1px;
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+    }
+    .nav_color{
+       color: black !important;
+    }
+    .footer_social_media{
+    text-align: center;
+    }
+    .profile-img{
+        max-width: 30px !important;
+        position: relative;
+        top: 22px;
+        left: 10px;
+    }
+    .profile-text{
+        position: relative;
+        left: 30px;
+    }
+    .keyTextBox{
+        margin: auto;
+    }
+    .logo_img{
+        max-width: 40px !important;
+    }
+    .contact-section{
+        padding: 30px;
+    }
+    .news-section{
+       text-align: center;
+    }
+    .date span{
+        display: block;
+        margin: auto;
+    }
+    .social_icon{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 19px;
+    }
+  } 

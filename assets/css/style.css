@@ -1,11 +1,13 @@
+@import url("variable.css");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .logo{
-    color: #0a58ca;
+    color:  var(--top_Heading_color);
     font-size: xx-large;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -21,9 +23,11 @@
     display: inline-block; 
     z-index: -1;
 }
+
 .nav_color{
-    color: white !important;
+    color: var(--white)!important;
 }
+
 .main::before{
     content: '';
     width: 150px;
@@ -34,30 +38,41 @@
     left: -90px;
     background-color:rgba(113, 221, 167, 0.2);
 }
+
+.set_position{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: var(--white) !important;
+}
+
 .banner{
     height: 40vh;
 }
+
 .banner_title{
     font-size: 30px;
     font-weight: 600;
     margin-top: 100px;
-    color: #0a58ca;;
+    color: var(--top_Heading_color);
 }
+
 .first_section p{
-     color: #0a58ca;;
+     color:  var(--top_Heading_color);
 }
+
 .card_context:hover{
-    background-color: #0a58ca;
-    color: white;
+    background-color:  var(--top_Heading_color);
+    color: var(--white);
 }
+
 .card_text{
     font-size: 10px !important;
 }
 
 /* quality section */
-
 .quality-section {
-    background-color: rgb(235 233 233);
+    background-color: var(--white);
 }
 
 .combine_data {
@@ -69,36 +84,35 @@
 }
 
 .profile-name {
-    color: blue;
+    color: var(--orignalblue);
     font-size: smaller;
 }
 
 .quality-section .content-side .profile-data {
     width: 90%;
-    background-color: #fff;
+    background-color: var(--white);
     margin-top: 15px;
 }
 
 .heading {
-    color: #2d2d58;
+    /* color: #2d2d58; */
+    color: var(--blue);
 }
 
 .lower-char {
     color: gray;
-    
 }
-/* .section-three { */
 
 /* key feature */
 .max-width{
     max-width: 158px;
-    color: rgb(226, 224, 224);
+    color:var(--white);
     margin-top: 5px;
     font-size: 8px;
     justify-content: center;
 }
-/* Features section */
 
+/* Features section */
 .features-section {
     content: "";
     position: relative;
@@ -120,47 +134,45 @@
 }
 
 .features-section .features-main {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding: 90px 0;
     z-index: 1;
 }
 
 .features-icon img-div {
-    color: #fff;
+    color: var(--white);
 }
 
 .features-data {
     text-align: justify;
     padding-left: 5px;
 }
+
 .client_heading{
     height: 170px;
-    background-color: #052555;
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
     justify-content: center;
     align-items: center;
 }
+
 .rule{
     width:50px;
     height: 1px;
-    border-bottom: 3px solid white ;
+    border-bottom: 3px solid var(--white) ;
     align-items: center;
  }
- .client_card{
-    position: relative;
-    bottom: 40px;
- }
+ 
  .footer_section{
-    background-color: #052555;
-    /* height: 270px; */
-}
+    background-color: var(--blue);
+ }
+ 
 .footer_ul{
     list-style: none;
 }
 
 /* contact section */
-
 .contact-section {
     padding: 40px 0;
 }
@@ -200,75 +212,6 @@ form button {
     height: 25px;
 }
 
-/*creative team*/
-
-
-.logo_img{
-    width: 80px !important;
-}
-.team_img{
-    max-width: 600px;
-    margin: auto;
-}
-.team_img1{
-    max-width: 200px !important;
-}
-@media screen and (max-width: 767px) {
-    .main::after {
-        content: "";
-        width: 207px;
-        height: 150px;
-        background: url(../images/bg.jpg);
-        top: 0px;
-        right: 1px;
-        position: absolute;
-        display: inline-block;
-        z-index: -1;
-    }
-    .nav_color{
-       color: black !important;
-    }
-    .footer_social_media{
-    text-align: center;
-    }
-    .team_img{
-    max-width: 140px;
-    margin: 0px auto;
-    display: block;
-    }
-    .profile-img{
-        max-width: 30px !important;
-        position: relative;
-        top: 22px;
-        left: 10px;
-    }
-    .profile-text{
-        position: relative;
-        left: 30px;
-    }
-    .keyTextBox{
-        margin: auto;
-    }
-    .logo_img{
-        max-width: 40px !important;
-    }
-    .contact-section{
-        padding: 30px;
-    }
-    .news-section{
-       text-align: center;
-    }
-    .date span{
-        display: block;
-        margin: auto;
-    }
-    .social_icon{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 19px;
-    }
-  }
-    
 .accordion {
     --bs-accordion-btn-icon-width: 0.9rem !important;
 }
@@ -278,10 +221,9 @@ button span {
 }
 
 /* news section */
-
 .news-section {
     padding: 60px 0;
-    background-color: rgb(235, 233, 233);
+    background-color: var(--white);
 }
 
 .news-section span {
@@ -295,9 +237,10 @@ button span {
 }
 
 .news-section .date {
-    background-color: blue;
-    color: #fff;
+    background-color:var(--orignalblue);
+    color: var(--white);
     margin-top: 5px;
     padding: 4px 8px;
     text-align: center;
 }
+
